@@ -1,4 +1,29 @@
-<p>guote works!</p>
+  <!-- <div class="container-fluid" >    
+  <h1>Quotes</h1>
+
+  </div>
+<div class="row">
+    <div class="col-md-8 col-sm-7">
+    
+        <h3 class="card card-body border-right-0 border-left-0 shadow-sm p-3 mb-5 rounded" appCardColorChange *ngFor='let quote of quotes; let i=index'>
+            <img src="https://img.icons8.com/material-two-tone/24/000000/quote-left.png" width=25><blockquote appHighlightQuote>{{quote.name}} - {{quote.completeDate|date|uppercase}} </blockquote> 
+            <button class="btn btn-outline-success" (click)='toggleDetails(i)'>See more</button>
+            <hr>
+      
+            <app-quote-details *ngIf="quote.showDetails" [quote]='quote' (isRemove)='deleteQuote($event,i)'></app-quote-details>
+           
+        </h3>
+          
+      </div> 
+       
+      <div class="col-md-4 col-sm-5">
+          <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+      </div>    
+      
+      
+    <p *ngIf='quotes.length > 5'>Quotes are limited to 10, please delete old quotes!</p>
+</div>
 
 
-  
+
+  -->
