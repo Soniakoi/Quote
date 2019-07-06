@@ -1,0 +1,29 @@
+h3{
+  font-family: 'Margarine', cursive;
+}
+app-quote-details{
+  font-family: 'ZCOOL XiaoWei', serif;
+}
+ 
+.btn-outline-success{
+  margin-left: 75%;
+  margin-right:5%;
+  padding: 0.6rem;
+  color: #000000;
+  border-color: #d3d3d3;  
+}
+.btn-outline-success:hover{
+  background-color:  #d3d3d3;
+}
+.btn-outline-success:focus{
+  border-color:#d3d3d3;
+}
+button{
+  float: left;
+}
+div h2{
+  text-align: center;
+  margin-left: 3rem;
+  padding: 1.5rem;
+  font-weight: bold;
+}

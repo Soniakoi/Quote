@@ -7,10 +7,10 @@ import {Quote} from '../quote'
 })
 export class QuoteComponent implements OnInit {
   quotes = [
-    new Quote(1,' Mind over matter. ',' ~Moritmer J.adler','Aisa',new Date(2019,0,15)),
-    new Quote(2,' Not all counted truly counts. Not all that counts, is counted. ',' ~Albert Einstein','Jemmy',new Date(2019,1,12)),
-    new Quote(3,' Every moment is a fresh beginning. ',' ~T.S Eliot','Jamz',new Date(2019,1,28)),
-    new Quote(4,' Everything you’ve ever wanted is on the other side of fear. ',' ~George Addair','Jamila',new Date(2019,2,10)),
+    new Quote(1,' Any fool can write code that a computer can understand. Good programmers write code that humans can understand ',' ~Martin Fowler','Sonia',new Date(2019,4,7)),
+    new Quote(2,'Give a man a program, frustrate him for a day,Teach a man to program, frustrate him for a lifetime ',' ~Muhammad Waseem','Koi',new Date(2019,4,7)),
+    new Quote(3,' Accept yourself,Ypu dont have to prove sh*t to anyone except yourself ',' ~Aubrey Graham aka Drake','Wangui',new Date(2019,4,7)),
+    new Quote(4,' Everything you’ve ever wanted is on the other side of fear. ',' ~George Addair','Habamba',new Date(2019,4,7)),
   ]
 
   toggleDetails(index){
@@ -20,7 +20,7 @@ export class QuoteComponent implements OnInit {
     let quoteLength = this.quotes.length;
     quote.id=quoteLength+1;
     quote.completeDate = new Date(quote.completeDate)
-    this.quotes.unshift(quote)
+    this.quotes.push(quote)
   }
   
   removeQuote(isRemove,index){
