@@ -6,11 +6,11 @@ import {Quote} from '../quote'
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
-  quotes = [
-    new Quote(1,' Any fool can write code that a computer can understand. Good programmers write code that humans can understand ',' ~Martin Fowler','Sonia',new Date(2019,4,7)),
-    new Quote(2,'Give a man a program, frustrate him for a day,Teach a man to program, frustrate him for a lifetime ',' ~Muhammad Waseem','Koi',new Date(2019,4,7)),
-    new Quote(3,' Accept yourself,Ypu dont have to prove sh*t to anyone except yourself ',' ~Aubrey Graham aka Drake','Wangui',new Date(2019,4,7)),
-    new Quote(4,' Everything you’ve ever wanted is on the other side of fear. ',' ~George Addair','Habamba',new Date(2019,4,7)),
+  quotes: Quote[] = [
+    new Quote(1,' Any fool can write code that a computer can understand. Good programmers write code that humans can understand ','',' ~Martin Fowler','Sonia',new Date(2019,4,7)),
+    new Quote(2,'Give a man a program, frustrate him for a day,Teach a man to program, frustrate him for a lifetime ',' ~Muhammad Waseem','','Koi',new Date(2019,4,7)),
+    new Quote(3,' Accept yourself,Ypu dont have to prove sh*t to anyone except yourself ',' ~Aubrey Graham aka Drake','Wangui','',new Date(2019,4,7)),
+    new Quote(4,' Everything you’ve ever wanted is on the other side of fear. ',' ~George Addair','Habamba','',new Date(2019,4,7)),
   ]
 
   toggleDetails(index){
