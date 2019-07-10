@@ -8,7 +8,7 @@
             <input type="text" class="form-control" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' required>
 
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
-              <p>Name is required</p>
+              <!-- <p>Name is required</p> -->
             </div>
         </div>
 
@@ -18,7 +18,7 @@
             <textarea class="form-control" id="description" rows="4" [(ngModel)]="newQuote.description" name="description" #descripion="ngModel" required></textarea>
 
             <div [hidden]="description.valid || description.pristine" class="alert alert-danger">
-                <p>Description is required</p>
+                <!-- <p>Description is required</p> -->
             </div>
   
         </div>
@@ -27,7 +27,7 @@
             <input type='date' id="date" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" required>
 
             <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger" >
-                <p>Date is required!</p>
+                <!-- <p>Date is required!</p> -->
               </div>  
             
   

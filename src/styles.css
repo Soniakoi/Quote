@@ -1,4 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 
 
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+
+body{
+  background: linear-gradient(deepskyblue,tomato);
+  
+}
+footer{
+  background-color: #d3d3d3;
+  padding: 0.5rem 0 0.5rem 0;
+  text-align: center;
+
+}
