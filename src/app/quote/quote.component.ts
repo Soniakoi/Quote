@@ -1,11 +1,14 @@
-import { Component, OnInit } from '@angular/core';
-import {Quote} from '../quote'
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import {Quote} from '../quote';
 @Component({
   selector: 'app-quote',
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
 export class QuoteComponent implements OnInit {
+  @Input() quote: any;
+  @Input() consolelog: any;
+  @Input() isComplete=new EventEmitter <boolean>();
   quotes: Quote[] = [
     new Quote(1,' Any fool can write code that a computer can understand. Good programmers write code that humans can understand ','',' ~Martin Fowler','Sonia',new Date(2019,4,7)),
     new Quote(2,'Give a man a program, frustrate him for a day,Teach a man to program, frustrate him for a lifetime ',' ~Muhammad Waseem','','Koi',new Date(2019,4,7)),
